@@ -36,6 +36,7 @@ public class StudentController {
         }
     }
 
+    // TO-DO
     public void managerMenu() {
         boolean running = true;
 
@@ -44,7 +45,7 @@ public class StudentController {
             String choice = scanner.nextLine();
 
             if (choice.equals("1")) {
-                view.printStudents(model.getStudents());
+               // TO-DO : Print the student list (using the View function)
             } else if (choice.equals("2")) {
                 addStudent();
             } else if (choice.equals("3")) {
@@ -58,15 +59,16 @@ public class StudentController {
     }
 
     public void studentMenu() {
-        System.out.print("Enter your name: ");
+        
+        view.printMessage("Enter your name: "");
         String name = scanner.nextLine();
 
-        Student student = model.findStudentByName(name);
+        Student student = // To-do find student by name (using the model function)
 
         if (student == null) {
             view.printMessage("Student not found.");
         } else {
-            int rank = model.getStudentRank(student);
+            int rank = // To-do get Student rank by name (using the model function)
             view.printStudent(student, rank);
         }
     }
