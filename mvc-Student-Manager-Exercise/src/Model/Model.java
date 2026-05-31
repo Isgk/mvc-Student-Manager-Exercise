@@ -22,7 +22,7 @@ public class Model {
     }
 
     public Student findStudentByName(String name) {
-      // To - do
+      // To-do find Student By Name
     }
 
     
