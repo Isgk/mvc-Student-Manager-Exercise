@@ -60,7 +60,7 @@ public class StudentController {
 
     public void studentMenu() {
         
-        view.printMessage("Enter your name: "");
+        view.printMessage("Enter your name: ");
         String name = scanner.nextLine();
 
         Student student = // To-do find student by name (using the model function)
@@ -74,10 +74,10 @@ public class StudentController {
     }
 
     public void addStudent() {
-        System.out.print("Enter student name: ");
+        view.printMessage("Enter your name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Enter student grade: ");
+        view.printMessage("Enter Grade : ");
         int grade = Integer.parseInt(scanner.nextLine());
 
         model.addStudent(name, grade);
@@ -89,7 +89,7 @@ public class StudentController {
         boolean updateMore = true;
 
         while (updateMore) {
-            System.out.print("Enter student name: ");
+            view.printMessage("Enter name: ");
             String name = scanner.nextLine();
 
             Student student = model.findStudentByName(name);
@@ -97,7 +97,7 @@ public class StudentController {
             if (student == null) {
                 view.printMessage("Student not found.");
             } else {
-                System.out.print("Enter new grade: ");
+                view.printMessage("Enter New Grade : ");
                 int grade = Integer.parseInt(scanner.nextLine());
 
                 student.setGrade(grade);
@@ -105,7 +105,7 @@ public class StudentController {
                 view.printMessage("Grade updated successfully.");
             }
 
-            System.out.print("Update another grade? yes/no: ");
+           view.printMessage("Update another grade? yes/no: ");
             String answer = scanner.nextLine();
 
             if (!answer.equalsIgnoreCase("yes")) {
