@@ -9,6 +9,7 @@ public class StudentView {
         System.out.println("\nAre you:");
         System.out.println("1. Manager");
         System.out.println("2. Student");
+        System.out.println("3. Exit");
         System.out.print("Choose: ");
     }
 
