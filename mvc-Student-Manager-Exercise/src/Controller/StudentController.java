@@ -28,7 +28,9 @@ public class StudentController {
                 managerMenu();
             } else if (choice.equals("2")) {
                 studentMenu();
-            } else {
+            } else if (choice.equals("3"){
+               running = false ;  
+            }else {
                 view.printMessage("Invalid choice.");
             }
         }
