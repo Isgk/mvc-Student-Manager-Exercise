@@ -7,8 +7,7 @@ public class Main {
         Model model = new Model();
         StudentView view = new StudentView();
 
-        StudentController controller =
-                new StudentController(model, view);
+        StudentController controller =  new StudentController(model, view);
 
         controller.start();
     }
