@@ -23,14 +23,7 @@ public class StudentView {
     }
 
     public void printStudents(ArrayList<Student> students) {
-        System.out.println("\n--- All Students ---");
-
-        for (Student student : students) {
-            System.out.println(
-                    student.getName()
-                            + " | Grade: " + student.getGrade()
-            );
-        }
+        // To-do Print Students and their grades
     }
 
     public void printStudent(Student student, int rank) {
