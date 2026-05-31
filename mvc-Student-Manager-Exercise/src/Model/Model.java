@@ -14,24 +14,18 @@ public class Model {
         students.add(new Student("Noor", 75));
     }
 
-    public ArrayList<Student> getStudents() {
-        return students;
-    }
+    // To-do : implement getStudents() function that returns ArrayList
+  
 
     public void addStudent(String name, int grade) {
         students.add(new Student(name, grade));
     }
 
     public Student findStudentByName(String name) {
-        for (Student student : students) {
-            if (student.getName().equalsIgnoreCase(name)) {
-                return student;
-            }
-        }
-
-        return null;
+      // To - do
     }
 
+    
     public int getStudentRank(Student student) {
         int rank = 1;
 
